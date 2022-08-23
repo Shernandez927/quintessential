@@ -1,0 +1,75 @@
+/* Imported google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+* {
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background-image: url("../images/westerosmap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+main {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 75%;
+    height: 90%;
+    text-align: center;
+
+}
+
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+button {
+    border-radius: 8px;
+}
+
+/* hover effect on leaderboard */
+button:hover {
+    box-shadow: 4px 4px 2px #404040;
+    cursor: pointer;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #c98702;
+    text-shadow: 2px 2px 2px #404040;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+span {
+    color: red;
+}
+
+/* media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+    .top-container {
+        flex-direction: column-reverse;
+        justify-self: center;
+    }
+}
