@@ -19,7 +19,7 @@ main {
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 20px;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     width: 75%;
     height: 90%;
     text-align: center;
@@ -31,15 +31,17 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px; 
+    padding: 20px;
 }
 
 button {
     border-radius: 8px;
+    background-color: #c98702;
 }
 
 /* hover effect on leaderboard */
 button:hover {
+    background-color: #9b6c00;
     box-shadow: 4px 4px 2px #404040;
     cursor: pointer;
 }
@@ -53,12 +55,43 @@ h1 {
     text-shadow: 2px 2px 2px #404040;
 }
 
+.startbtn, .submitbtn, .answerbtn {
+    margin: 20px;
+    padding: 10px;
+    background-color: #c98702;
+}
+
+.quizquestions {
+    display: none;
+}
+
+.quizquestions li {
+    list-style: none;
+}
+
+.quizend {
+    display: none;
+}
+
+.leaderboard {
+    display: none;
+    
+    
+}
+.leaderboard ol {
+    overflow-y: scroll;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 40px;
+}
+
 footer {
     color: white;
     text-align: center;
 }
 
-span {
+#heart {
     color: red;
 }
 
@@ -73,3 +106,4 @@ span {
         justify-self: center;
     }
 }
+

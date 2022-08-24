@@ -13,24 +13,60 @@
     <main>
     <!--Container with leaderboard button, header, and timer-->
         <div class="top-container">
-        <button class="leaderboard">View High Scores ♚</button>
-        <p>Time left: 0:00</p>
+        <button class="leaderboardbtn">View High Scores ♚</button>
+        <p>Time left <span id="timeleft">:00</span></p>
         </div>
 
     <!--Header with introduction to quiz-->
     <header>
             <h1>Game of Thrones Mini Quiz</h1>
     </header>
-        <section>
+        <section class="quizbegin">
             <h2>How well do you know Game of Thrones?</h2>
             <p>Take this quiz to test your knowledge of the hit novel series and TV Adaptation. Seven Blessings to you, goodfolk.</p>
+            <button class="startbtn">Begin Quiz</button>
+        </section>
+        <!--Section with quiz questions and answer choices-->
+        <section class="quizquestions">
+            <h2 id="questionasked">Question:</h2>
+            <h3></h3>
+                <ul>
+                    <li><button id="choice1" class="answerbtn"></button></li>
+                    <li><button id="choice2" class="answerbtn"></button></li>
+                    <li><button id="choice3" class="answerbtn"></button></li>
+                    <li><button id="choice4" class="answerbtn"></button></li>
+                </ul>
+        </section>
+        <!--Display for results and initial submission to high score board-->
+        <section class="quizend">
+            <h2>Final Results</h2>
+            <p> Your final score is: <span id="finalscore">0/10</span></p>
+            <form>
+                <label for="">Enter your initials here: </label> 
+                <input type="text" id="initialtext">
+                <button class="submitbtn">Submit</button>
+             </form>         
+        </section>
+        <!--High score board with ordered list-->
+        <section class="leaderboard">
+            <h2>High Scores</h2>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <button id="backtomain">Back to main screen</button>
         </section>
     </main>
 
    <footer> 
     <p>
-    © 2022 Made with <span>❤</span> by Shelby Hernandez
+    © 2022 Made with <span id="heart">❤</span> by Shelby Hernandez
     </p>
 </footer>
+<script src="./script.js"></script>
 </body>
 </html>
+
