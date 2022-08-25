@@ -9,8 +9,6 @@
 
 ## Demo
 
-https://shernandez927.github.io/quintessential/
-
 - When the begin button is clicked a timer starts counting down with a prompt of multiple choice questions.
 
 - When a question is answered incorrectly, 10 seconds is dedcuted from the timer.
@@ -19,7 +17,6 @@ https://shernandez927.github.io/quintessential/
 
 - When the high score board is shown a button is also presented to return to the main screen.
 
-Provide instructions and examples for use. Include screenshots as needed.
 
 - URL: (https://shernandez927.github.io/quintessential/)
 
@@ -35,11 +32,11 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 - Favicon made with favicon.io (https://favicon.io/)
 
-- Collaborators: 
+## Collaborators: 
 
--Salissa Hernandez: (https://github.com/Salissa4)
+- Salissa Hernandez: (https://github.com/Salissa4)
 
--Tomas Diaz: (https://github.com/tomasdiaz83)
+- Tomas Diaz: (https://github.com/tomasdiaz83)
 
 ## License
 
