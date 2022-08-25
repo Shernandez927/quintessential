@@ -9,13 +9,27 @@
 
 ## Demo
 
+https://shernandez927.github.io/quintessential/
+
+- When the begin button is clicked a timer starts counting down with a prompt of multiple choice questions.
+
+- When a question is answered incorrectly, 10 seconds is dedcuted from the timer.
+
+- When the timer reaches 0 or when all questions have been answered, a prompt is shown with initial input to enter into a high score board.
+
+- When the high score board is shown a button is also presented to return to the main screen.
+
 Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+- URL: (https://shernandez927.github.io/quintessential/)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+    ![screenshotimg](./assets/images/quizscreenshot1.png)
+    ![screenshotimg2](./assets/images/quizscreenshot2.png)
+    ![screenshotimg3](./assets/images/quizscreenshot3.png)
+    ![screenshotimg4](./assets/images/quizscreenshot4.png)
+    ![screenshotimg5](./assets/images/quizscreenshot5.png)
+    ![screenshotimg6](./assets/images/quizscreenshot6.png)
+ 
 
 ## Credits
 
@@ -53,6 +67,6 @@ SOFTWARE.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+![sizebadge](https://img.shields.io/github/repo-size/shernandez927/quintessential?style=for-the-badge) ![licensebadge](https://img.shields.io/github/license/shernandez927/quintessential?style=for-the-badge)
 
 
