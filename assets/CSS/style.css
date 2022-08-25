@@ -4,7 +4,7 @@
 * {
     font-family: 'Cinzel', serif;
 }
-
+/* adds image as background */
 body {
     background-image: url("../images/westerosmap.png");
     background-size: cover;
@@ -41,7 +41,7 @@ button {
     background-color: #c98702;
 }
 
-/* hover effect on leaderboard */
+/* hover effect on buttons */
 button:hover {
     background-color: #9b6c00;
     box-shadow: 4px 4px 2px #404040;
@@ -62,7 +62,7 @@ h1 {
     
     background-color: #c98702;
 }
-
+/*Quiz sections later manipulated with javascript functions*/
 .quizquestions {
     display: none;
 }

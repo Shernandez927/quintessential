@@ -1,39 +1,33 @@
 // Quiz Questions
 const questions = [
   {
-    // number: 1,
     question:
       "Who did Robert Baratheon name as Protector of the Realm before his death?",
     answer: "Ned Stark",
     choices: ["Ned Stark", "Joffrey Baratheon", "Stannis Baratheon","Renly Baratheon"],
   },
   {
-    // number: 2,
     question: "What is the sigil for House Bolton?",
     answer: "A flayed man",
     choices: ["A trout", "A stag", "A flayed man", "A direwolf"],
   },
   {
-    // number: 3,
     question: "Where was Talisa Maegyr from?",
     answer: "Volantis",
     choices: ["KingsLanding", "Dorne", "Essos", "Volantis"],
   },
   {
-    // number: 4,
     question: "Who trades Daenerys to the Dorthraki in exchange for an army?",
     answer: "Viserys",
     choices: ["Jorah Mormont", "Viserys", "Varys", "Khal Drogo"],
   },
   {
-    // number: 5,
     question:
       "Which of Daenerys's dragons is killed and then resurrected by the Night King?",
     answer: "Viserion",
     choices: ["Drogon", "Rhaegal", "Viserion", "Bastion"],
   },
   {
-    // number: 6,
     question: "What religion do the Brotherhood Without Banners preach?",
     answer: "The Lord of Light",
     choices: [
@@ -44,13 +38,11 @@ const questions = [
     ],
   },
   {
-    // number: 7,
     question: "Who does Arya train with in Braavos?",
     answer: "Jaqen H'ghar",
     choices: ["Jaqen H'ghar", "Syrio Forel", "The Hound", "Brienne of Tarth"],
   },
   {
-    // number: 8,
     question: "What animal is on Gendry Baratheon's helmet?",
     answer: "A bull's head",
     choices: [
@@ -61,7 +53,6 @@ const questions = [
     ],
   },
   {
-    // number: 9,
     question:
       "What language is commonly used by the Red Priestess and Daenerys?",
     answer: "High Valyrian",
@@ -73,7 +64,6 @@ const questions = [
     ],
   },
   {
-    // number: 10,
     question:
       "Who offers to be Tyrion's champion in a trial by combat in Kingslanding after Joffrey's death?",
     answer: "Oberyn Martell",
@@ -81,9 +71,8 @@ const questions = [
   },
 ];
 
-// variables for beginning question index, and score
+// variables for beginning question index and score
 var finalScore = 0;
-// let totalTime = 90;
 var questionIndex = 0;
 
 function startQuiz() {
@@ -95,7 +84,7 @@ function startQuiz() {
   quizIntro.style.display = "none";
   quizQuestionsSection.style.display = "block";
   answerCheck.style.display = "block";
-  // timer function
+  // timer function to start timer when begin quiz button is clicked
   var startTimer = setInterval(function () {
     if (totalTime >= 0) {
       timer.textContent = totalTime + " seconds remaining";
@@ -122,17 +111,12 @@ function checkAnswer(e) {
   if (questions[questionIndex].answer === e.target.innerHTML) {
     answerCheck.textContent = "Correct!"; // displays correct feedback after answer is selected
     finalScore++;
-    // questionIndex++;
-    // newQuestion();
   } else {
     answerCheck.textContent = "Incorrect, you lost 10 seconds of time"; // displays incorrect feedback after wrong answer is selected
     totalTime -= 10;
-    // finalScore--;
-    // questionIndex++;
-    // newQuestion();
   }
     questionIndex++;
-    // newQuestion();
+
   // if statement to que to next question
   if (questionIndex < questions.length) {
     newQuestion();
@@ -161,9 +145,8 @@ function storeInitials(event) {
   } else {
     highScoreName.textContent = initValue.value + " " + finalScore + "/10";
   }
-  var storeInitials = localStorage.setItem("highScoreName", JSON.stringify(highScoreName));
+  
   var alreadyStoredInitials = JSON.parse(localStorage.getItem("highscorename"));
-  // localStorage.setItem(initValue)
   showLeaderboard();
 }
 
@@ -211,9 +194,9 @@ goBack.addEventListener("click", backToMain);
 const viewLeaderboard = document.getElementById("leaderboardbtn");
 viewLeaderboard.addEventListener("click", showLeaderboard);
 
-// event listeners to initialize startQuix function
+// event listeners to initialize startQuiz function
 const beginQuizButton = document.querySelector(".startbtn");
 beginQuizButton.addEventListener("click", startQuiz);
 
-//
+// event listener to submit initials to leaderboard on submit button
 initialInput.addEventListener("click", storeInitials);
