@@ -35,6 +35,8 @@ main {
 }
 
 button {
+    padding: 10px;
+    font-size: 18px;
     border-radius: 8px;
     background-color: #c98702;
 }
@@ -57,7 +59,7 @@ h1 {
 
 .startbtn, .submitbtn, .answerbtn {
     margin: 20px;
-    padding: 10px;
+    
     background-color: #c98702;
 }
 
@@ -67,6 +69,10 @@ h1 {
 
 .quizquestions li {
     list-style: none;
+}
+
+#answercheck {
+    display: none;
 }
 
 .quizend {
@@ -104,6 +110,11 @@ footer {
     .top-container {
         flex-direction: column-reverse;
         justify-self: center;
+    }
+
+    .quizquestions {
+        background-size: contain;
+        overflow-y: scroll;
     }
 }
 

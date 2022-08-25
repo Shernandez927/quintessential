@@ -21,6 +21,12 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 - Favicon made with favicon.io (https://favicon.io/)
 
+- Collaborators: 
+
+-Salissa Hernandez: (https://github.com/Salissa4)
+
+-Tomas Diaz: (https://github.com/tomasdiaz83)
+
 ## License
 
 MIT License
